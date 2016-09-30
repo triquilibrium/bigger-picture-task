@@ -26,6 +26,10 @@
             display: inline-block;
             margin: 5px 12px;
 
+            &.bordered {
+                border-color: $colorSecondary;
+            }
+
             a {
                 display: block;
                 padding: 5px 8px;

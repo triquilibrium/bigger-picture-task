@@ -72,6 +72,13 @@
     &:hover {
         opacity: 0.7;
     }
+
+    &.arrow--blue {
+        &:after {
+        background-image: url('/img/arrow-blue.svg');
+
+        }
+    }
 }
 
 .col-heading {
@@ -123,8 +130,33 @@
             max-height: 64px;
         }
 
-        p {
-            margin: 2rem 0;
+        h4 {
+            margin: 2.1rem 0;
+        }
+    }
+
+    &.reasons {
+        h4 {
+            padding-bottom: 15px;
+        }
+    }
+
+    .blockquote {  
+        p,
+        p:not(:last-child) {
+            font-family: 'tk-futura-pt-n4';
+            padding-bottom: 1rem;
+        }
+
+        .arrow-link {
+            color: $colorMain;
+        }
+    }
+
+    &.contact {
+        h3 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
         }
     }
 }

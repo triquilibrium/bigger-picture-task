@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="318.999px" height="230.377px" viewBox="0 0 318.999 230.377" enable-background="new 0 0 318.999 230.377"
+	 xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="318.999" height="230.377"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="none" stroke="#009ECA" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M139.067,167.024H15.845l1.106-1.823c18.985-31.28,18.985-70.526,0-101.809l-1.106-1.822h99.065"/>
+	<path clip-path="url(#SVGID_2_)" fill="none" stroke="#009ECA" stroke-linejoin="round" stroke-miterlimit="10" d="M183.996,61.57
+		h108.515c19.66,30.918,20.455,70.213,2.062,101.901l-2.062,3.553H168.466"/>
+	<path clip-path="url(#SVGID_2_)" fill="none" stroke="#009ECA" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M240.644,167.024l1.105-1.823c18.985-31.28,18.985-70.526,0-101.809l-1.105-1.822"/>
+	<path clip-path="url(#SVGID_2_)" fill="none" stroke="#009ECA" stroke-linejoin="round" stroke-miterlimit="10" d="M15.845,61.57
+		l-1.106,1.823c-18.985,31.281-18.985,70.526,0,101.809l1.106,1.822"/>
+	<polygon clip-path="url(#SVGID_2_)" fill="none" stroke="#009ECA" stroke-linejoin="round" stroke-miterlimit="10" points="
+		291.845,112.297 283.845,112.297 283.845,104.297 279.845,104.297 279.845,112.297 271.845,112.297 271.845,116.297 
+		279.845,116.297 279.845,124.298 283.845,124.298 283.845,116.297 291.845,116.297 	"/>
+	
+		<rect x="42.845" y="112.298" clip-path="url(#SVGID_2_)" fill="none" stroke="#009ECA" stroke-linejoin="round" stroke-miterlimit="10" width="20" height="4"/>
+	<path clip-path="url(#SVGID_2_)" fill="none" stroke="#009ECA" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M307.832,101.964h2.667c4.4,0,8,3.6,8,8v8.667c0,4.4-3.6,8-8,8h-2.667"/>
+	<polygon clip-path="url(#SVGID_2_)" fill="none" stroke="#FFB000" stroke-miterlimit="10" points="129.678,228.096 
+		129.678,228.096 147.178,114.297 107.678,91.485 129.678,0.499 219.011,0.499 173.312,80.206 208.021,104.736 	"/>
+</g>
+</svg>

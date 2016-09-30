@@ -1,14 +1,8 @@
 //==========  VARIABLES  ==========
 
 // Colors
-$colorMain: #00a3db;
-$colorSecondary: #3c325c;
-$colorDark: #3c3c3c;
-$bgLight: #f2f5f9;
+$colorMain: #222;
 .color-main {color: $colorMain;}
-.color-secondary {color: $colorSecondary;}
-.color-dark {color: $colorDark;}
-.bg-light {background: $bgLight;}
 
 // Breakepoints
 $breakpointMobile: 768px;
@@ -37,12 +31,6 @@ $anim_duration1: 600ms;
     &:after {
         clear: both
     }
-}
-
-@mixin verticalCenter() {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 // Hide-text

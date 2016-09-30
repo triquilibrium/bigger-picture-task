@@ -48,11 +48,6 @@ $large_container_max_width: 1500;
   padding-right: 40px;
 }
 
-.container-fluid-20 {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .container-850 {
   max-width: ($narrow_container_max_width)+px;
   
@@ -65,26 +60,6 @@ $large_container_max_width: 1500;
   }
 }
 
-.space-t--80 {
-  padding-top: 80px;
-}
-
-.space-b--20 {
-  padding-bottom: 20px;
-}
-
-.space-b--40 {
-  padding-bottom: 40px;
-}
-
-.space-b--60 {
-  padding-bottom: 60px;
-}
-
-.space-b--80 {
-  padding-bottom: 80px;
-}
-
 // Row with default 15px gutter
 $gutter: 15px;
 .row {
@@ -92,7 +67,7 @@ $gutter: 15px;
   margin-right: 0;
 
   > [class*="col-"] {
-    padding: 0 20px;
+    padding: 0;
   }
 }
 

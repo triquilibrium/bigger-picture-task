@@ -916,17 +916,31 @@ select {
   .form__row__right {
     width: 70%; }
 
+.form__filed {
+  position: relative; }
+
 .form__response {
-  border-radius: 5px; }
+  position: absolute;
+  bottom: 25px;
+  right: 7px;
+  padding: 0 4px;
+  border-radius: 2px;
+  font-size: .8rem;
+  color: #fff; }
   .form__response--ok {
-    background: green; }
+    color: #0df50d; }
   .form__response--error {
-    background: red; }
+    color: #c74848; }
   .form__response p {
     padding: 10px;
     font-size: 1em !important;
     color: #fff;
     text-shadow: none; }
+
+.form-confirm {
+  display: none;
+  text-align: center;
+  font-size: 2rem; }
 
 #contact-mail {
   display: none; }

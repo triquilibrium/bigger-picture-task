@@ -27,7 +27,8 @@
     <meta property="og:url" content="http://www.biggerpicture.agency">
     <meta property="og:site_name" content="Application name">
     <meta property="og:image" content="/img/touch/chrome-touch-icon-192x192.png">
-    
+    <script src="/vendor/jquery-2.1.0.min/index.js"></script>
+
 
     <script src="https://use.typekit.net/jqq7yzg.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -58,7 +59,7 @@
     <section class="top-banner">
         <div class="container-850 container text-center">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-12">
                     <div class="content">
                         
                         <h1>Mitel Unified Comms</h1>
@@ -76,7 +77,7 @@
     <section class="row">
         <div class="container">
             <div class="row space-b--20">
-                <div class="col-lg-12">
+                <div class="col-md-12">
                     
                     <div class="breadcrumbs">
                         <ul>
@@ -173,7 +174,7 @@
     <section class="bg-light row-over">
         <div class="container">
             <div class="row space-t--60 space-b--60">
-                <div class="col-lg-12 text-center">  
+                <div class="col-md-12 text-center">  
                     <div class="content mitel-platinum">
 
                         <img src="/img/mitel.svg" alt="mitel platinum partner">
@@ -190,7 +191,7 @@
     <section>
         <div class="container container-850">
             <div class="row space-t--80 space-b--40">
-                <div class="col-lg-12 text-center">
+                <div class="col-md-12 text-center">
                     <div class="content">
                         
                         <h3>Reasons to trust us with your Mitel Integration</h3>
@@ -286,50 +287,59 @@
     <section class="row-colored triangle triangle--light">
         <div class="container-850 container">
             <div class="row space-t--80 space-b--80">
-                <div class="col-lg-12">
+                <div class="col-md-12">
                     <div class="content contact">
                         
                         <h3 class="text-center">Book a free demo</h3>
                         <form id="contact-form" class="form">
                             <div class="row">
                                 <div class="col-lg-6">
-
-                                    <label for="firstname" class="form__label">First name</label>
-                                    <input type="text" name="firstname" id="firstname" class="form__input">
+                                    <div class="form__filed">
                                     
+                                        <label for="firstname" class="form__label">First name</label>
+                                        <input type="text" name="firstname" id="firstname" class="form__input form__input--name">
+                                    
+                                    </div>
                                 </div>
                                 <div class="col-lg-6">
+                                    <div class="form__filed">
 
-                                    <label for="lastname" class="form__label">Last name</label>
-                                    <input type="text" name="lastname" id="lastname" class="form__input">
+                                        <label for="lastname" class="form__label">Last name</label>
+                                        <input type="text" name="lastname" id="lastname" class="form__input form__input--name">
                                                                             
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-6">
-                                    
-                                    <label for="email" class="form__label">Email</label>
-                                    <input type="text" name="email" id="email" class="form__input">
-                                    
-                                </div>
-                                <div class="col-lg-6">
-                                    
-                                    <label for="phone-number" class="form__label">Phone number</label>
-                                    <input type="text" name="phone-number" id="phone-number" class="form__input">     
+                                    <div class="form__filed">
 
+                                        <label for="email" class="form__label">Email</label>
+                                        <input type="text" name="email" id="email" class="form__input form__input--email">
+                                    
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form__filed">
+                                        
+                                        <label for="phone-number" class="form__label">Phone number</label>
+                                        <input type="text" name="phone-number" id="phone-number" class="form__input">     
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-12">
-        
-                                    <label for="company" class="form__label">Company</label>
-                                    <input type="text" name="company" id="company" class="form__input">
+                                <div class="col-md-12">
+                                    <div class="form__filed">
                                     
+                                        <label for="company" class="form__label">Company</label>
+                                        <input type="text" name="company" id="company" class="form__input">
+                                    
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="row space-t--20">
-                                <div class="col-lg-12">
+                                <div class="col-md-12">
 
                                     <button type="submit" name="submit" id="submit" class="btn bordered btn-sweep-right">
                                     Request booking</button>
@@ -344,7 +354,12 @@
     </section>
 
     <footer class="footer">
-        
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+        </div>
     </footer>
 
     <script src="//localhost:35729/livereload.js"></script>

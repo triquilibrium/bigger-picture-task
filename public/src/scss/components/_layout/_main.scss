@@ -7,3 +7,210 @@
 .l-main {
     padding: 30px;
 }
+
+.header {
+    padding: 10px 0;
+}
+
+.bordered {
+    border-width: 2px;
+    border-style: solid;
+}
+
+.top-banner {
+    display: flex;
+    min-height: 500px;
+    padding: 15px;
+    color: #fff;
+    background: url('/img/slide.jpg') no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+
+    .content {
+        h1, 
+        p {
+            font-family: 'tk-futura-pt-n4';
+        }
+    }
+}
+
+.box-brochure {
+    position: relative;
+    background: #7e7e9a;
+    width: 88%;
+    margin: 20px 0 0 auto;
+    padding: 20px 20px 20px 25%;
+    color: #fff;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: -13%;
+        background: url('/img/brochure.png') no-repeat;
+        width: 210px;
+        height: 170px;
+    }
+
+}
+
+.arrow-link {
+    font-family: 'tk-acumin-pro-n7';
+    
+    &:after {
+        content: '';
+        display: inline-block;
+        background: url('/img/arrow.svg') no-repeat center;
+        height: 19px;
+        width: 11px;
+        position: relative;
+        top: 4px;
+        margin: 0 8px;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &.arrow--blue {
+        &:after {
+        background-image: url('/img/arrow-blue.svg');
+
+        }
+    }
+}
+
+.col-heading {
+    color: $colorMain;
+    border-bottom: 2px solid $colorMain;
+}
+
+.row-colored {
+    background: $colorMain;
+    color: #fff;
+
+    .btn-sweep-right {
+        &:hover {
+            color: $colorMain;
+        }
+    }
+
+}
+
+.content {
+
+    .box-shadow {
+        width: 85%;
+        margin: 0 auto;
+        padding: 20px 6% 0;
+        background: #fff;
+        box-shadow: 0 0 30px rgba(0,0,0,0.6);
+
+        &__heading {
+            font-size: 1.7rem;
+            margin: 2rem 0 0 0;
+        }
+
+        &__text {
+            color: $colorMain;
+            font-size: .8rem;
+            line-height: 1rem;
+        }
+    }
+    
+    &.find-your-fit {
+        h3 {
+            margin-top: -10px;
+        }
+    }
+    
+    &.mitel-platinum {
+        img {
+            max-height: 64px;
+        }
+
+        h4 {
+            margin: 2.1rem 0;
+        }
+    }
+
+    &.reasons {
+        h4 {
+            padding-bottom: 15px;
+        }
+    }
+
+    .blockquote {  
+        p,
+        p:not(:last-child) {
+            font-family: 'tk-futura-pt-n4';
+            padding-bottom: 1rem;
+        }
+
+        .arrow-link {
+            color: $colorMain;
+        }
+    }
+
+    &.contact {
+        h3 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+
+
+.row-over {
+    position: relative;
+    z-index: 1;
+
+    p {
+        font-size: 2rem;
+    }
+
+    .btn.bordered {
+        border-color: $colorMain;
+
+        &:hover {
+            color: $colorMain;
+        }
+    }
+}
+
+.col-img {
+    margin-top: 5%;
+}
+
+.triangle {
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        border: solid transparent;
+        height: 0;
+        width: 0;
+        pointer-events: none;
+        border-color: rgba(0, 0, 0, 0);
+        border-top-color: #fff;
+        border-width: 30px;
+        margin-left: -30px;
+    }
+
+    &.triangle--light {
+        &:before {
+            border-top-color: $bgLight;
+        }
+    }
+}
+
+.footer {
+    background: $colorSecondary;
+}

@@ -27,7 +27,7 @@ body {
     font-size: 100%;
     line-height: 1.5;
     font-weight: 300;
-    color: $colorMain;
+    color: $colorDark;
 }
 
 ul, li {
@@ -37,6 +37,11 @@ ul, li {
 
 a {
     text-decoration: none;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
 
     &:not(.btn) {
         color: inherit;

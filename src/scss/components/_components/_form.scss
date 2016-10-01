@@ -159,6 +159,7 @@ select {
 }
 
 .form__response {
+    display: none;
     position: absolute;
     bottom: 25px;
     right: 7px;
@@ -168,11 +169,11 @@ select {
     color: #fff;
 
     &--ok {
-        color: #0df50d;
+        color: $colorOk;
     }
 
     &--error {
-        color: #c74848;
+        color: $colorError;
     }
 
     p {

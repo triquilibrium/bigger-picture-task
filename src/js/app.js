@@ -93,12 +93,12 @@
                 }
 
                 if ( inp.attr('id') === 'phone-number' && that.checkNum( inp ) === false ) {
-                    msg = ['error', 'Wrong nmber'];
+                    msg = ['error', 'Wrong number'];
                 }
             }
 
             $('<div class="form__response form__response--' + msg[0] + '">' + msg[1] + '</div>').insertAfter( inp );
-
+            $('.form__response').fadeIn(300);
         }
 
     };

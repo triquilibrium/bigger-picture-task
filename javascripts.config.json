@@ -1,6 +1,7 @@
 {
     "head": [],
     "body": [
+        "vendor/jquery-2.1.0.min/index.js",
         "src/js/app.js"
     ]
 }

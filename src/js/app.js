@@ -89,7 +89,7 @@
                 }
 
                 if ( inp.attr('id') === 'email' && that.checkEmail( inp ) === false ) {
-                    msg = ['error', 'Wrong emial'];
+                    msg = ['error', 'Wrong email'];
                 }
 
                 if ( inp.attr('id') === 'phone-number' && that.checkNum( inp ) === false ) {
@@ -104,5 +104,45 @@
     };
 
     formVal.init();
+
+
+    // Scroll effects
+
+    var visualEffect = {
+
+        hideSection: function(){
+            $('.section').addClass('section-hide');
+        },
+
+        showSection: function(){
+            this.hideSection();
+
+            var windowHeight = $(window).height();
+            var srcollingTop = $(window).scrollTop();
+
+            $('.section').each(function(){
+
+                if ( $(this).hasClass('section-hide') ) {
+
+                    var offT = $(this).offset().top;
+
+                    if ( (offT - srcollingTop) < (windowHeight * 0.8) ) {
+                        $(this).addClass('section-show');
+                        $(this).removeClass('section-hide');
+                    }
+                }
+
+            });
+        }
+    };
+
+    $(document).ready(function(){
+        visualEffect.showSection();
+    });
+
+
+    $(window).on('scroll resize', function(){
+        visualEffect.showSection();
+    });
 
 })();

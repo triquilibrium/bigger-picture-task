@@ -154,17 +154,26 @@ select {
     }
 }
 
+.form__filed {
+    position: relative;
+}
 
 .form__response {
-    border-radius: 5px;
-
+    display: none;
+    position: absolute;
+    bottom: 25px;
+    right: 7px;
+    padding: 0 4px;
+    border-radius: 2px;
+    font-size: .8rem;
+    color: #fff;
 
     &--ok {
-        background: green;
+        color: $colorOk;
     }
 
     &--error {
-        background: red;
+        color: $colorError;
     }
 
     p {
@@ -174,6 +183,12 @@ select {
         color: #fff;
         text-shadow: none;
     }
+}
+
+.form-confirm {
+    display: none;
+    text-align: center;
+    font-size: 2rem;
 }
 
 #contact-mail {

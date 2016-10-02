@@ -51,8 +51,24 @@ select {
 // Inputs & textareas
 .form__input, 
 .form__textarea { 
-    background-color: #2eb4e1;
-    // box-shadow: inset 0 2px 3px rgba(0,0,0,0.2);
+    background-color: $colorContact;
+    color: #fff;
+
+    &::-webkit-input-placeholder {
+        color: #f9f9f9;
+    }
+
+    &:-moz-placeholder {
+        color: #f9f9f9;
+    }
+
+    &::-moz-placeholder {
+        color: #f9f9f9;
+    }
+
+    &:-ms-input-placeholder {
+        color: #f9f9f9;
+    }
 }
     
 .ie9 .form__input {
@@ -167,6 +183,7 @@ select {
     border-radius: 2px;
     font-size: .8rem;
     color: #fff;
+    font-family: 'tk-acumin-pro-n4';
 
     &--ok {
         color: $colorOk;

@@ -917,7 +917,20 @@ select {
 
 .form__input,
 .form__textarea {
-  background-color: #2eb4e1; }
+  background-color: #2eb4e1;
+  color: #fff; }
+  .form__input::-webkit-input-placeholder,
+  .form__textarea::-webkit-input-placeholder {
+    color: #f9f9f9; }
+  .form__input:-moz-placeholder,
+  .form__textarea:-moz-placeholder {
+    color: #f9f9f9; }
+  .form__input::-moz-placeholder,
+  .form__textarea::-moz-placeholder {
+    color: #f9f9f9; }
+  .form__input:-ms-input-placeholder,
+  .form__textarea:-ms-input-placeholder {
+    color: #f9f9f9; }
 
 .ie9 .form__input {
   line-height: normal; }
@@ -1003,7 +1016,8 @@ select {
   padding: 0 4px;
   border-radius: 2px;
   font-size: .8rem;
-  color: #fff; }
+  color: #fff;
+  font-family: 'tk-acumin-pro-n4'; }
   .form__response--ok {
     color: #0df50d; }
   .form__response--error {
@@ -2461,7 +2475,11 @@ object {
 
 @media screen and (max-width: 1370px) {
   .box-brochure:before {
-    zoom: .8; } }
+    zoom: 0.8;
+    -ms-zoom: 0.8;
+    -webkit-zoom: 0.8;
+    -moz-transform: scale(0.8, 0.8);
+    -moz-transform-origin: left center; } }
 
 @media screen and (max-width: 1220px) {
   .content .box-shadow {
@@ -2476,7 +2494,11 @@ object {
   .box-brochure {
     padding-left: 30%; }
   .box-brochure:before {
-    zoom: .6; }
+    zoom: 0.6;
+    -ms-zoom: 0.6;
+    -webkit-zoom: 0.6;
+    -moz-transform: scale(0.6, 0.6);
+    -moz-transform-origin: left center; }
   .main-nav ul li {
     margin: 5px; } }
 

@@ -17,12 +17,40 @@
     border-style: solid;
 }
 
+.section__top--visible {
+    opacity: 1;
+    @include transitionAll(600ms);
+}
+
+.section__top--hide {
+    opacity: 0;
+}
+
+.section-hide {
+    opacity: 0;
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.section-show {
+    opacity: 1;
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    @include transitionAll(1200ms);
+}
+
 .top-banner {
     display: flex;
     min-height: 500px;
     padding: 15px;
     color: #fff;
-    background: url('/img/slide.jpg') no-repeat;
+    background: url('/img/slide.jpg') no-repeat center;
     background-size: cover;
     flex-direction: column;
     justify-content: center;
@@ -71,6 +99,13 @@
 
     &:hover {
         opacity: 0.7;
+    }
+
+    &.arrow--blue {
+        &:after {
+        background-image: url('/img/arrow-blue.svg');
+
+        }
     }
 }
 
@@ -123,10 +158,56 @@
             max-height: 64px;
         }
 
-        p {
-            margin: 2rem 0;
+        h4 {
+            margin: 2.1rem 0;
         }
     }
+
+    &.reasons {
+        h4 {
+            padding-bottom: 15px;
+        }
+    }
+
+    .blockquote {  
+        p,
+        p:not(:last-child) {
+            font-family: 'tk-futura-pt-n4';
+            padding-bottom: 1rem;
+        }
+
+        .arrow-link {
+            color: $colorMain;
+        }
+    }
+
+    &.contact {
+        h3 {
+            font-size: 4rem;
+            line-height: 4rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &.footer-nav {
+        li {
+            font-size: 1.2rem;
+        }
+    }
+
+    &.policy {
+        a,
+        p,
+        p:not(:last-child) {
+            font-size: .9rem;
+            padding-bottom: .2rem;
+        }
+
+        .policy__terms {
+            padding-bottom: .7rem;
+        }
+    }
+
 }
 
 
@@ -180,5 +261,27 @@
 }
 
 .footer {
-    background: $colorSecondary;
+    background: #271c4b;
+    color: $colorSecondaryLight;
+
+    a:hover {
+        opacity: 0.7;
+    }
+
+    li {
+        font-size: .8rem;
+    }
+
+    .footer__socials {
+        text-align: right;
+    }
+}
+
+.line-bottom {
+    &:after {
+        content: '';
+        display: block;
+        border-bottom: 1px solid $colorSecondaryLight;
+        padding: 15px 0;   
+    }
 }

@@ -6,9 +6,16 @@
 
 .form {
     position: relative;
+    font-family: 'tk-acumin-pro-n7';
+    // font-weight: 700;
 
     fieldset {
         @include clearfix();
+    }
+
+    .btn {
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -19,10 +26,11 @@
 select, 
 .form__select {  
     width: 100%; 
-    border-radius: 2px; 
-    border: solid 1px #ccc; 
-    padding: .3em .5em;
+    border-radius: 0; 
+    border: solid 1px #73cceb; 
+    padding: .5em;
     outline: none;
+    margin-bottom: 14px;
 
     &:focus {
         border-color: $colorMain;
@@ -43,8 +51,8 @@ select {
 // Inputs & textareas
 .form__input, 
 .form__textarea { 
-    background-color: #f5f5f5;
-    box-shadow: inset 0 2px 3px rgba(0,0,0,0.2);
+    background-color: #2eb4e1;
+    // box-shadow: inset 0 2px 3px rgba(0,0,0,0.2);
 }
     
 .ie9 .form__input {
@@ -121,7 +129,7 @@ select {
 .form__label {
     display: block;
     width: 100%;
-    line-height: 2;
+    line-height: 1.7;
 }
 
 
@@ -146,17 +154,26 @@ select {
     }
 }
 
+.form__filed {
+    position: relative;
+}
 
 .form__response {
-    border-radius: 5px;
-
+    display: none;
+    position: absolute;
+    bottom: 25px;
+    right: 7px;
+    padding: 0 4px;
+    border-radius: 2px;
+    font-size: .8rem;
+    color: #fff;
 
     &--ok {
-        background: green;
+        color: $colorOk;
     }
 
     &--error {
-        background: red;
+        color: $colorError;
     }
 
     p {
@@ -166,6 +183,12 @@ select {
         color: #fff;
         text-shadow: none;
     }
+}
+
+.form-confirm {
+    display: none;
+    text-align: center;
+    font-size: 2rem;
 }
 
 #contact-mail {

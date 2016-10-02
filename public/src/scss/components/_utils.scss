@@ -1,8 +1,18 @@
 //==========  VARIABLES  ==========
 
 // Colors
-$colorMain: #222;
+$colorMain: #00a3db;
+$colorSecondary: #3c325c;
+$colorSecondaryLight: #55547f;
+$colorDark: #3c3c3c;
+$bgLight: #f2f5f9;
+$colorOk: #0df50d;
+$colorError: #c74848;
+
 .color-main {color: $colorMain;}
+.color-secondary {color: $colorSecondary;}
+.color-dark {color: $colorDark;}
+.bg-light {background: $bgLight;}
 
 // Breakepoints
 $breakpointMobile: 768px;
@@ -31,6 +41,20 @@ $anim_duration1: 600ms;
     &:after {
         clear: both
     }
+}
+
+@mixin verticalCenter() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin transitionAll($time){
+    -webkit-transition: all $time ease;
+    -moz-transition: all $time ease;
+    -ms-transition: all $time ease;
+    -o-transition: all $time ease;
+    transition: all $time ease;
 }
 
 // Hide-text

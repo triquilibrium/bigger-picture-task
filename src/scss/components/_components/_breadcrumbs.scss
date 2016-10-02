@@ -6,16 +6,20 @@
 
 .breadcrumbs {
     clear: both;
-    padding: 1em 0;
+    padding: 1.2em 0;
     color: #999;
+    font-family: 'tk-futura-pt-n4';
+    font-size: 1.2rem;
 
     li {
         display: inline-block;
 
         &:not(:last-child):after {
-            content: '>';
-            padding: 0 10px;
-            color: #dedede;
+            content: '';
+            display: inline-block;
+            padding: 0 12px;
+            background: url('/img/arrow-gray.svg') no-repeat center;
+            height: 12px;
         }
     }
 

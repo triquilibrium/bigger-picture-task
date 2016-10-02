@@ -6,11 +6,23 @@
 
 .btn {
     @include inline-block();
-    padding: .7em 1.5em;
-    border-radius: 6px;
-    transition: background 0.2s ease;
+    position: relative;
+    padding: .4em .6em;
+    // border-radius: 6px;
+    background: transparent;
+    transition: all 0.5s ease;
 
-    font-weight: 600;
+    // font-weight: 600;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    &.bordered {
+        border-color: #fff;
+        font-size: 1.2rem;
+        font-family: 'tk-acumin-pro-n4';
+        padding-bottom: .6rem;
+    }
+
 }
 
 // Size
@@ -29,5 +41,37 @@
 
     &:hover {
         background: #666;
+    }
+}
+
+.btn-sweep-right {
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    &:hover {
+        color: $colorSecondary;
+
+        &:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
     }
 }

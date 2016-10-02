@@ -18,7 +18,7 @@ ul,
 
 .list-ul,
 .list-ol {
-    padding-top: 0.7em;
+    padding-top: 0;
     padding-bottom: 0.7em;
 
     li {
@@ -41,7 +41,7 @@ ul,
 
 // Unordered list
 .list-ul {
-    padding-left: 30px;
+    padding-left: 0;
 
     li {
         &:before {

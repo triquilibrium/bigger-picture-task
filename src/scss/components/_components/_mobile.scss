@@ -1,7 +1,11 @@
 
 @media screen and (max-width: 1370px){
     .box-brochure:before {
-        zoom: .8;
+        zoom: 0.8;
+        -ms-zoom: 0.8;
+        -webkit-zoom: 0.8;
+        -moz-transform:  scale(0.8,0.8);
+        -moz-transform-origin: left center;
     }
 }
 
@@ -26,7 +30,11 @@
     }
 
     .box-brochure:before {
-        zoom: .6;
+        zoom: 0.6;
+        -ms-zoom: 0.6;
+        -webkit-zoom: 0.6;
+        -moz-transform:  scale(0.6,0.6);
+        -moz-transform-origin: left center;
     }
 
     .main-nav ul li {
